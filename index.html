@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b10">
+<title>الأرشيف الوزاري العراقي</title>
+<style>
+:root{--bg:#090b10;--surface:#111620;--surface2:#171f2c;--line:#2b3546;--text:#f4f5f7;--muted:#9ba7b8;--accent:#d8b66a;--accent2:#a98b4d;--glow:rgba(216,182,106,.12)}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% -10%,var(--glow),transparent 42%),var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.7;transition:.2s}
+.wrap{width:min(1120px,93%);margin:auto}.top{border-bottom:1px solid var(--line);padding:18px 0}.brand{display:flex;align-items:center;gap:12px}.mark{height:46px;width:46px;border:1px solid var(--accent2);border-radius:14px;display:grid;place-items:center;color:var(--accent);font-size:23px;background:var(--surface)}h1{font-size:clamp(19px,4vw,27px);margin:0}.sub{font-size:12px;color:var(--muted)}.topright{margin-right:auto}.pill{border:1px solid var(--line);padding:5px 10px;border-radius:30px;color:var(--muted);font-size:11px}
+.hero{padding:32px 0 18px}.eyebrow{color:var(--accent);font-size:11px;font-weight:800;letter-spacing:1.4px}.hero h2{font-size:clamp(27px,5vw,43px);line-height:1.3;margin:8px 0}.hero p{color:var(--muted);max-width:720px;margin:0}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:20px 0}.stat,.panel,.question,.empty,.premium{background:linear-gradient(145deg,var(--surface),var(--bg));border:1px solid var(--line);border-radius:16px}.stat{padding:12px}.stat b{display:block;color:var(--accent);font-size:18px}.stat span{font-size:11px;color:var(--muted)}
+.panel{padding:17px;margin:16px 0}.panel h3{margin:0 0 12px;font-size:17px}.filters{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.field label{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}.field select,.field input{width:100%;border:1px solid var(--line);background:var(--bg);color:var(--text);border-radius:10px;padding:11px;font:inherit;font-size:14px;outline:none}.field select:focus,.field input:focus{border-color:var(--accent)}.search{grid-column:1/-1}
+.materials{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.material{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:10px;padding:9px 10px;background:var(--bg);font-size:13px;cursor:pointer}.material input{accent-color:var(--accent);width:16px;height:16px}.material:has(input:checked){border-color:var(--accent);background:var(--glow)}
+.btn{border:1px solid var(--accent2);background:color-mix(in srgb,var(--accent) 12%,var(--surface));color:var(--accent);padding:9px 13px;border-radius:10px;font:inherit;font-size:13px;cursor:pointer}.btn.primary{background:var(--accent);color:#17130b;border-color:var(--accent);font-weight:800}.actions{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:13px}.tiny{color:var(--muted);font-size:11px}
+.section-title{display:flex;align-items:center;justify-content:space-between;margin:24px 0 10px}.section-title h3{margin:0;font-size:18px}.count{color:var(--muted);font-size:12px}
+.empty{padding:24px;text-align:center}.empty .ico{font-size:29px;color:var(--accent)}.empty h4{margin:5px 0}.empty p{font-size:13px;color:var(--muted);max-width:610px;margin:auto}
+.question{padding:16px;margin:10px 0}.qtop{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}.tags{display:flex;gap:6px;flex-wrap:wrap}.tag{font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:30px;padding:2px 9px}.tag.gold{color:var(--accent);border-color:var(--accent2)}.qtext{font-size:16px;font-weight:700;margin:13px 0}.repeat{border-top:1px solid var(--line);padding-top:10px;font-size:13px}.repeat strong{color:var(--accent)}.repeat ul{margin:5px 0 0;padding-right:20px;color:var(--muted)}.answer{display:none;margin-top:12px;padding:13px;border-radius:12px;background:var(--surface2);border:1px solid var(--line)}.answer.open{display:block}.answer strong{color:var(--accent)}.answer p{margin:5px 0 0;font-size:14px}
+.premium{padding:15px;margin-top:16px;display:flex;justify-content:space-between;align-items:center;gap:12px}.premium b{color:var(--accent)}.premium p{margin:3px 0 0;color:var(--muted);font-size:12px}
+footer{border-top:1px solid var(--line);margin-top:32px;padding:20px 0 30px;color:var(--muted);font-size:11px}
+@media(max-width:700px){.filters{grid-template-columns:1fr 1fr}.materials{grid-template-columns:1fr 1fr}.search{grid-column:1/-1}.actions,.premium{align-items:flex-start;flex-direction:column}.stats{gap:7px}}
+</style></head>
+<body>
+<header class="top"><div class="wrap brand"><div class="mark">و</div><div><h1>الأرشيف الوزاري العراقي</h1><div class="sub">منصة الأسئلة الوزارية والحلول النموذجية</div></div><div class="topright"><span class="pill">FREE · BLACK & GOLD</span></div></div></header>
+<main class="wrap">
+<section class="hero"><div class="eyebrow">IRAQI MINISTERIAL EXAM ARCHIVE</div><h2>كل سؤال بمكانه،<br><span style="color:var(--accent)">وكل تكرار موثّق.</span></h2><p>اختر المرحلة والمادة والفصل والسنة والدور. وتعرّف على السنوات والأدوار التي ظهر فيها السؤال، ثم افتح الحل النموذجي.</p></section>
+<section class="stats"><div class="stat"><b>3 مراحل دراسية</b><span>الثالث متوسط · السادس العلمي · السادس الابتدائي</span></div><div class="stat"><b>سجل التكرار</b><span>تظهر السنوات والأدوار الفعلية لكل سؤال</span></div></section>
+<section class="panel">
+<h3>1. اختر المرحلة</h3>
+<div class="filters">
+<div class="field"><label for="grade">المرحلة</label><select id="grade"><option value="">كل المراحل</option><option>الثالث متوسط</option><option>السادس العلمي</option><option>السادس الابتدائي</option></select></div>
+<div class="field"><label for="chapter">الفصل</label><select id="chapter"><option value="">كل الفصول</option><option>الفصل الأول</option><option>الفصل الثاني</option><option>الفصل الثالث</option><option>الفصل الرابع</option><option>الفصل الخامس</option><option>الفصل السادس</option><option>الفصل السابع</option><option>الفصل الثامن</option><option>الفصل التاسع</option><option>الفصل العاشر</option><option>الفصل الحادي عشر</option><option>الفصل الثاني عشر</option><option>موضوعات عامة / غير محدد</option></select></div>
+<div class="field"><label for="year">السنة</label><select id="year"><option value="">كل السنوات</option></select></div>
+<div class="field"><label for="round">الدور</label><select id="round"><option value="">كل الأدوار</option><option>الدور الأول</option><option>الدور الثاني</option><option>الدور الثالث</option><option>التمهيدي</option></select></div>
+<div class="field"><label for="kind">نوع السؤال</label><select id="kind"><option value="">كل الأنواع</option><option>عرّف</option><option>علّل</option><option>اختر الإجابة</option><option>املأ الفراغ</option><option>مسألة</option><option>قارن</option><option>ارسم / وضّح</option><option>أجب عن الأسئلة</option></select></div>
+<div class="field search"><label for="query">بحث في نص السؤال أو الحل</label><input id="query" type="search" placeholder="اكتب كلمة أو جزءاً من السؤال..."></div>
+</div>
+<div style="height:1px;background:var(--line);margin:17px 0"></div>
+<div class="panel-head"><h3>2. اختر المادة أو المواد</h3><span class="tiny">يمكن اختيار أكثر من مادة</span></div>
+<div id="materials" class="materials"></div>
+<div class="actions"><button class="btn" id="reset">مسح جميع الاختيارات</button><span class="tiny">السنة والدور يظهران في سجل كل سؤال، وليس كنطاق سنوات عام.</span></div>
+</section>
+<section class="premium"><div><b>✦ PREMIUM THEMES</b><strong> ألوان واجهة إضافية</strong><p>الأسود والذهبي مجاني. الثيمات الوردية والبنفسجية والزرقاء والخضراء والتخصيص ضمن Premium.</p></div><button class="btn" id="premiumBtn">تفاصيل Premium</button></section>
+<div class="section-title"><h3>الأسئلة الوزارية</h3><span class="count" id="count">0 سؤال</span></div>
+<div id="results" class="empty"><div class="ico">⌕</div><h4>الأرشيف قيد التجهيز</h4><p>لم تتم إضافة أسئلة بعد. ستظهر هنا الأسئلة الموثقة فقط، مع السنوات والأدوار التي تكررت فيها والحلول النموذجية.</p></div>
+<footer>الأسئلة والحلول تحفظ في ملفات الموقع المحلية. لا يستخدم الموقع أي API لتشغيل البحث أو عرض الحلول.</footer>
+</main>
+<script>
+const subjectMap={
+"الثالث متوسط":["التربية الإسلامية","اللغة العربية","اللغة الإنكليزية","الرياضيات","الاجتماعيات","الأحياء","الكيمياء","الفيزياء"],
+"السادس العلمي":["التربية الإسلامية","اللغة العربية","اللغة الإنكليزية","الرياضيات","الأحياء","الكيمياء","الفيزياء"],
+"السادس الابتدائي":["التربية الإسلامية","اللغة العربية","اللغة الإنكليزية","الرياضيات","العلوم","الاجتماعيات"]
+};
+const $=id=>document.getElementById(id), chosen=new Set();
+for(let y=2026;y>=2010;y--){let o=document.createElement('option');o.value=y;o.textContent=y;$('year').append(o)}
+function drawMaterials(){
+ const grade=$('grade').value;
+ const list=grade?subjectMap[grade]:[...new Set(Object.values(subjectMap).flat())];
+ $('materials').innerHTML='';
+ list.forEach(s=>{const label=document.createElement('label');label.className='material';const input=document.createElement('input');input.type='checkbox';input.value=s;input.checked=chosen.has(s);input.addEventListener('change',()=>{input.checked?chosen.add(s):chosen.delete(s);render()});label.append(input,document.createTextNode(s));$('materials').append(label)});
+}
+let allQuestions=[];
+function render(){
+ const g=$('grade').value,c=$('chapter').value,y=$('year').value,r=$('round').value,k=$('kind').value,q=$('query').value.trim().toLowerCase();
+ const selected=[...chosen];
+ const found=allQuestions.filter(x=>(!g||x.grade===g)&&(!selected.length||selected.includes(x.subject))&&(!c||x.chapter===c)&&(!y||x.appearances.some(a=>String(a.year)===y))&&(!r||x.appearances.some(a=>a.round===r))&&(!k||x.kind===k)&&(!q||(x.text+' '+x.answer).toLowerCase().includes(q)));
+ $('count').textContent=found.length+' سؤال';
+ const box=$('results');box.className='';box.innerHTML='';
+ if(!found.length){box.className='empty';box.innerHTML='<div class="ico">⌕</div><h4>'+(allQuestions.length?'لا توجد نتائج مطابقة':'الأرشيف قيد التجهيز')+'</h4><p>'+(allQuestions.length?'جرّب تغيير الفلاتر أو كلمات البحث.':'لم تتم إضافة أسئلة بعد. لن نعرض بيانات تجريبية على أنها أسئلة وزارية حقيقية.')+'</p>';return}
+ found.forEach(x=>{
+  const card=document.createElement('article');card.className='question';
+  const tags=document.createElement('div');tags.className='tags';
+  [x.grade,x.subject,x.chapter,x.kind].filter(Boolean).forEach((v,i)=>{let t=document.createElement('span');t.className='tag'+(i===0?' gold':'');t.textContent=v;tags.append(t)});
+  const text=document.createElement('div');text.className='qtext';text.textContent=x.text;
+  const repeat=document.createElement('div');repeat.className='repeat';repeat.innerHTML='<strong>تكرر في:</strong>';
+  const ul=document.createElement('ul');x.appearances.forEach(a=>{let li=document.createElement('li');li.textContent=a.year+' — '+a.round;ul.append(li)});repeat.append(ul);
+  const btn=document.createElement('button');btn.className='btn';btn.textContent='عرض الحل النموذجي';
+  const answer=document.createElement('div');answer.className='answer';const strong=document.createElement('strong');strong.textContent='الحل النموذجي';const p=document.createElement('p');p.textContent=x.answer;answer.append(strong,p);
+  btn.onclick=()=>{answer.classList.toggle('open');btn.textContent=answer.classList.contains('open')?'إخفاء الحل النموذجي':'عرض الحل النموذجي'};
+  card.append(tags,text,repeat,btn,answer);box.append(card);
+ });
+}
+['grade','chapter','year','round','kind','query'].forEach(id=>$(id).addEventListener(id==='query'?'input':'change',()=>{if(id==='grade'){chosen.clear();drawMaterials()}render()}));
+$('reset').onclick=()=>{['grade','chapter','year','round','kind','query'].forEach(id=>$(id).value='');chosen.clear();drawMaterials();render()};
+$('premiumBtn').onclick=()=>alert('الثيمات الإضافية ستكون ميزة Premium. تغيير ألوان الواجهة يمكن تنفيذه محلياً دون API. أما التحقق الآمن من الاشتراك فيحتاج نظام عضويات موثوقاً.');
+drawMaterials();
+fetch('./data/questions.json').then(r=>r.json()).then(data=>{allQuestions=Array.isArray(data)?data:[];render()}).catch(()=>{allQuestions=[];render()});
+</script></body></html>
